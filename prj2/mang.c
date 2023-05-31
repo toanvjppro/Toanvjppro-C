@@ -68,9 +68,20 @@ void gtMax(int array[], int kichthuoc, int giatrimax)
 }
 void sapxepar(int array[], int kichthuoc)
 {
-   int i;
-   for(i=0 ; i< kichthuoc ; i++)
+   for (int i = 0 ; i<kichthuoc ; i++)
    {
-    array[i];
-   } 
+    int min = i;
+    for (int j = i+1 ; j < kichthuoc ; j++){
+        if (array[j]<array[min])
+        min = j; 
+    }
+    if (min != i){
+        int temp = array[i];
+        array[i]= array[min];
+        array[min]=temp;
+    } 
+   }
+   for (int p=0; p<kichthuoc ; p++){
+    printf("%d\n", array[p]);
+   }
 }
