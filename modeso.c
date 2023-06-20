@@ -19,7 +19,8 @@ int main(int argc, char *argv[])
     
 if (replay)
 {
-    
+    while (replay == 1)
+    {
     if (modetc == 1)
         {
         printf("Ban da chon mode Choi mot minh\n");
@@ -199,6 +200,7 @@ if (replay)
 printf("\nBan co muon choi lai khong\n");
 printf("1.Co\n2.Khong\n");
 scanf("%d", &replay);
+    }
 }
 system("PAUSE");
 return 0;
