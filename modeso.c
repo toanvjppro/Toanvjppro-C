@@ -198,7 +198,7 @@ if (replay)
         printf("Nhap sai roi thang ngu");
     }
 printf("\nBan co muon choi lai khong\n");
-printf("1.Co\n2.Khong\n");
+printf("1.Co\n0.Khong\n");
 scanf("%d", &replay);
     }
 }
